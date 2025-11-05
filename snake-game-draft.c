@@ -107,7 +107,7 @@
      }
 
        //snake movement X and Y coordinate
-        void move_snake(int deltaX, int deltaY)
+        void move_snake(int movX, int movY)
         {
            int i;
 
@@ -116,8 +116,8 @@
                snake.part[i] = snake.part[i-1];
             }
             //moving snake body by x and y variable interchanging
-              snake.part[0].x += deltaX;
-              snake.part[0].y += deltaY;
+              snake.part[0].x += movX;
+              snake.part[0].y += movY;
          }
 
           //user input readings (movement)
@@ -148,6 +148,7 @@
 
        return 0;
    }
+
 
 
 
